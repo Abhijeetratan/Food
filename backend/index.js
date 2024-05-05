@@ -9,7 +9,7 @@ const express = require('express')
 const app = express()
 const path =require("path");
 
-const port = 5000
+const port = process.env.PORT || 3000;
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "https://food-pwwq.onrender.com");
   res.header(
@@ -37,5 +37,5 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on http://localhost:${port}`)
-})
+  console.log(`Server is running on port ${port}`);
+});
