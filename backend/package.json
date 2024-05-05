@@ -13,6 +13,7 @@
     "axios": "^1.6.8",
     "bcryptjs": "^2.4.3",
     "build": "^0.1.4",
+    "connect": "^3.7.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-validator": "^7.0.1",
